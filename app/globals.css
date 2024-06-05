@@ -17,17 +17,24 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: theme('colors.white');
+  background: theme('colors.gray.900');
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.item-name {
+  view-transition-name: item-name;
+}
+
+.item-image {
+  view-transition-name: item-image;
+}
+
+.item-price {
+  view-transition-name: item-price;
 }
