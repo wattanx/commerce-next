@@ -1,5 +1,5 @@
 import { getItems } from './_lib/client';
-import { Item } from './_lib/Item';
+import { Item } from './_components/Item';
 
 export default async function Home() {
   const { items } = await getItems({ limit: 3, status: 'shown' });

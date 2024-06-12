@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { SiteHeader } from './_lib/SiteHeader';
+import { SiteHeader } from './_components/SiteHeader';
 import { ViewTransitions } from 'next-view-transitions';
 
 export const runtime = 'edge';

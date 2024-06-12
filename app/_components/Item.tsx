@@ -1,13 +1,7 @@
-'use client';
-
-import type { ItemResponse } from './types';
+import type { ItemResponse } from '../_lib/types';
 import { Link } from 'next-view-transitions';
-import { useRouter, useSearchParams } from 'next/navigation';
 
 export const Item = ({ item }: { item: ItemResponse }) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
   return (
     <Link
       href={`/items/${item.id}/`}
